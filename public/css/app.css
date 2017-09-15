@@ -1,0 +1,175 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.body {
+  margin-top: 70px;
+  padding: 20px;
+}
+
+.topbar-wrapper {
+  position: fixed;
+  top: 0;
+  left: 0;
+  -webkit-box-shadow: 0 0 5px gray;
+          box-shadow: 0 0 5px gray;
+  height: 70px;
+  width: 100%;
+  background: #eeeeee;
+  border-bottom: 1px solid #a9a9a9;
+}
+
+.topbar-container {
+  max-width: 1000px;
+  position: relative;
+  margin: 0 auto;
+  height: 70px;
+}
+
+.topbar-container h1 {
+  position: absolute;
+  top: 50%;
+  -webkit-transform: translate(0, -50%);
+          transform: translate(0, -50%);
+  left: 20px;
+  color: gray;
+  font-weight: normal;
+}
+
+.topbar-container nav {
+  position: absolute;
+  top: 50%;
+  -webkit-transform: translate(0, -50%);
+          transform: translate(0, -50%);
+  right: 20px;
+}
+
+.topbar-container nav ul:after {
+  content: '';
+  display: block;
+  clear: both;
+}
+
+.topbar-container nav ul li {
+  list-style: none;
+  float: left;
+  margin-left: 10px;
+}
+
+.topbar-container nav ul li a {
+  display: block;
+  padding: 10px;
+  color: gray;
+  text-decoration: none;
+  outline: none;
+  position: relative;
+}
+
+.topbar-container nav ul li a:hover .decor {
+  width: 100%;
+  opacity: 1;
+}
+
+.topbar-container nav ul li a .decor {
+  position: absolute;
+  left: 50%;
+  -webkit-transform: translate(-50%, 0);
+          transform: translate(-50%, 0);
+  bottom: 0;
+  padding: 1px;
+  background: gray;
+  opacity: 0;
+  -webkit-transition: width 0.2s;
+  transition: width 0.2s;
+  width: 0%;
+}
+
+.input-default.textarea-default {
+  width: 600px;
+  height: 400px;
+}
+
+.input-default {
+  width: 250px;
+  border: 1px solid #eaeaea;
+  padding: 10px;
+  border-radius: 4px;
+  outline: none;
+}
+
+.input-default:focus {
+  border: 1px solid #bfbfbf;
+}
+
+.submit-btn-default {
+  padding: 10px;
+  border: 1px solid #4286f4;
+  background: #5892ef;
+  font-weight: bold;
+  color: #ffffff;
+}
+
+.red-text {
+  color: red;
+}
+
+.message-box {
+  max-width: 600px;
+  margin: 0 auto;
+  border: 1px solid gray;
+  padding: 15px;
+  border-radius: 4px;
+}
+
+.message-box h1 {
+  font-weight: normal;
+  color: gray;
+  margin-bottom: 10px;
+  border-bottom: 1px solid gray;
+  padding-bottom: 10px;
+}
+
+.input-form {
+  min-width: 400px;
+  margin: 0 auto;
+}
+
+.input-form h1 {
+  font-weight: normal;
+  color: gray;
+}
+
+.input-form hr {
+  width: 400px;
+  border: 0;
+  border-bottom: 1px solid #eaeaea;
+  margin: 10px 0;
+}
+
+.input-form ul {
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+  margin: 0 auto;
+}
+
+.input-form ul li {
+  list-style: none;
+  margin-bottom: 10px;
+}
+
+.input-form ul li:last-child {
+  margin-bottom: 0;
+}
+
+.message {
+  border-bottom: 1px solid gray;
+  padding: 10px;
+  margin-bottom: 10px;
+}
+
+.message:last-child {
+  margin-bottom: 0;
+}
+

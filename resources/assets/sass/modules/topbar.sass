@@ -1,0 +1,47 @@
+.topbar-wrapper
+  position: fixed
+  top: 0
+  left: 0
+  box-shadow: 0 0 5px gray
+  height: 70px
+  width: 100%
+  background: #eeeeee
+  border-bottom: 1px solid #a9a9a9
+.topbar-container
+  max-width: 1000px
+  position: relative
+  margin: 0 auto
+  height: 70px
+  h1
+    +vCenter
+    left: 20px
+    color: gray
+    font-weight: normal
+  nav
+    +vCenter
+    right: 20px
+    ul
+      +clear-float
+      li
+        list-style: none
+        float: left
+        margin-left: 10px
+        a
+          display: block
+          padding: 10px
+          color: gray
+          text-decoration: none
+          outline: none
+          position: relative
+          &:hover
+            .decor
+              width: 100%
+              opacity: 1
+          .decor
+            +hCenter
+            bottom: 0
+            padding: 1px
+            background: gray
+            opacity: 0
+            transition: width 0.2s
+            width: 0%
